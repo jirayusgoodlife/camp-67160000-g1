@@ -1,9 +1,9 @@
 @extends('template.default')
 
 @section('title', 'Workshop FORM')
+@section('header', 'Workshop #HTML - FORM')
 @section('content')
-<h1>Workshop #HTML - FORM</h1>
-<form>
+<form method="post" action="">
     <div class="row mt-3">
         <div class="col-sm-12 col-md-4">
             <label for="fname">ชื่อ</label>
@@ -41,8 +41,6 @@
     <script>
         let clickMe = function (){
             let fname = document.getElementById('fname')
-            // fname.value = "from ClickMe"
-            // console.log(fname.value)
 
             if(fname.value == ""){
                 fname.classList.remove('is-valid')
